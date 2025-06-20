@@ -2,38 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Online Payments Fraud Detection</title>
+  <title>Fraud Detection Web App</title>
+  <!-- Link to your CSS file inside the static folder -->
+  <link rel="stylesheet" href="static/main.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #e3f2fd;
-      padding: 40px;
+      background-color: #f0f8ff;
       text-align: center;
+      padding: 40px;
     }
     h1 {
       color: #0d47a1;
     }
-    a {
+    img {
+      margin-top: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      height: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .nav-links {
+      margin-top: 30px;
+    }
+    .nav-links a {
       display: inline-block;
-      margin: 15px;
-      padding: 10px 20px;
-      background-color: #1976d2;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #007bff;
       color: white;
       text-decoration: none;
       border-radius: 8px;
+      transition: background-color 0.3s;
     }
-    a:hover {
-      background-color: #0b5394;
+    .nav-links a:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h1>Online Payments Fraud Detection</h1>
-  <p>Welcome to the static preview of the Fraud Detection web app.</p>
-  <p><strong>Note:</strong> Flask backend features will not work here. This is just a static display.</p>
 
-  <a href="templates/home.html">Home Page</a>
-  <a href="templates/predict.html">Prediction Page</a>
-  <a href="templates/result.html">Result Page</a>
+  <h1>Welcome to the Fraud Detection Web App</h1>
+  <p>This is a static preview. Flask-based prediction won't work on GitHub Pages.</p>
+
+  <!-- Image from the static folder -->
+  <img src="static/ONLINE2.png" alt="Fraud Detection Image" />
+
+  <!-- Navigation Links -->
+  <div class="nav-links">
+    <a href="templets/home.html">Home Page</a>
+    <a href="templets/predict.html">Prediction Page</a>
+    <a href="templets/result.html">Result Page</a>
+  </div>
+
 </body>
 </html>
